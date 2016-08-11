@@ -26,9 +26,11 @@ public class LFTCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player p = (Player) sender;
+        //Si la commande est exécutée alors on téléporte le joueur aux coordonnées dans la config
         if (args.length == 0) {
             p.teleport(new Location(Bukkit.getWorld(config.getString("Spawn.World")), config.getDouble("Spawn.X"), config.getDouble("Spawn.Y"), config.getDouble("Spawn.Z"), (float)config.get("Spawn.Yaw"),(float)config.get("Spawn.Pitch")));
         }else if(args.length == 1){
+            //Si l'argument est "set" alors on stock dans la config les coordonnées du joueur ainsi que son orientation
             if(args[0].equalsIgnoreCase("set")){
                 config.set("Spawn.X", p.getLocation().getX());
                 config.set("Spawn.Y", p.getLocation().getY());
