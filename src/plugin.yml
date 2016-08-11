@@ -1,0 +1,10 @@
+name: LeFourre-Tout
+main: fr.zomdev.lefourretout.LeFourreTout
+version: 1.0
+author: Zomdev
+commands:
+ lft:
+  description: Lel
+ lft2:
+  description: Lol
+

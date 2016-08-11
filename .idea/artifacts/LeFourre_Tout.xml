@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LeFourre-Tout">
+    <output-path>$USER_HOME$/Desktop/ServSpigotTest/plugins</output-path>
+    <root id="archive" name="LeFourre-Tout.jar">
+      <element id="module-output" name="LeFourre-Tout" />
+    </root>
+  </artifact>
+</component>
